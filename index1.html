@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV Form</title>
+    <h1> CV FORM </h1>
+</head>
+<body>
+
+    <form action="#" method="post">
+     
+        <fieldset>
+            <legend>Personal Information</legend> 
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="phone">Enter a phone number (format: 555-55-555):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+
+        <label for="linkedin">Your LinkedIn page:</label>
+        <input type="url" id="linkedin" name="linkedin"><br><br>
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    </fieldset>
+        <label for="experience">Years of experience (between 3 and 10):</label>
+        <input type="number" id="experience" name="experience" min="3" max="10" required><br><br>
+
+        <label>expected salary :4000
+            <input type="range" min="4000" max="10000">10000
+        </label>
+
+        <label for="language">Language:</label>
+        <select id="language" name="language">
+            <option value="Arabic">Arabic</option>
+            <option value="English">English</option>
+        </select><br><br>
+
+        <label for="cv">Upload your CV:</label>
+        <input type="file" id="cv" name="cv"><br><br>
+
+        <label for="start_week">The nearest week you can start work:</label>
+        <input type="week" id="start_week" name="start_week"><br><br>
+
+        <label for="start_month">The nearest month you can start work:</label>
+        <input type="month" id="start_month" name="start_month"><br><br>
+
+        <label for="best_time">The best time to work:</label>
+        <input type="time" id="best_time" name="best_time"><br><br>
+
+        <label for="majors">Majors:</label>
+        <textarea id="majors" name="majors" rows="4" cols="50"></textarea><br><br>
+
+        <label for="why_work">Why you want to work with us:</label>
+        <textarea id="why_work" name="why_work" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
